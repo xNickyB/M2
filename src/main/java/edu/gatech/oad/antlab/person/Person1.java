@@ -1,5 +1,6 @@
 package edu.gatech.oad.antlab.person;
 
+
 /**
  *  A simple class for person 1
  *  returns their name and a
@@ -10,6 +11,7 @@ package edu.gatech.oad.antlab.person;
  */
 public class Person1 {
   /** Holds the persons real name */
+
   private String name;
   	/**
 	 * The constructor, takes in the persons
@@ -30,8 +32,14 @@ public class Person1 {
 	 * @return the modified string
 	 */
 	private String calc(String input) {
-	  //Person 1 put your implementation here
-	  return null;
+	    String temp = new String();
+		for (int i = 0; i < input.length() - 2; i++) {
+			temp += input.charAt(i + 2);
+		}
+		temp += input.charAt(0);
+		temp += input.charAt(1);
+		input = temp;
+		return input;
 	}
 	
 	/**
@@ -42,6 +50,9 @@ public class Person1 {
 	 * @return the string representing the 
 	 *         object
 	 */
+	public void main(String args[]) {
+	    System.out.print(calc("gtg123b"));
+    }
 	public String toString(String input) {
 	  return name + calc(input);
 	}

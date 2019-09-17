@@ -1,2 +1,0 @@
-Najaah Chambliss
-nchambliss3@gatech.edu

@@ -1,2 +1,2 @@
-Najaah Chambliss
-nchambliss3@gatech.edu
+Keah Gruduah
+kgruduah3@gatech.edu

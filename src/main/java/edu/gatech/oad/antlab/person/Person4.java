@@ -30,7 +30,17 @@ public class Person4 {
      * @return the modified string
      */
     private String calc(String input) {
+        char[] letter = new char[input.length()];
+        //int[] newL = new int[input.length()];
+        String newString = "";
       //Person 4 put your implementation here
+        for (int i = 0; i < input.length(); i++) {
+            letter[i] = input.charAt(i);
+        }
+        for (int i = 0; i < letter.length ; i++ ) {
+            //newString.append((toString(letter[i] + 1)));
+            System.out.println(letter[i] + 1);
+        }
       return null;
     }
     
@@ -45,6 +55,10 @@ public class Person4 {
     public String toString(String input) {
       return name + calc(input);
     }
+    //public static void main(String[] args) {
+    //    Person4 najaah = new Person4("Najaah");
+    //    System.out.println(najaah.calc("abc123"));
+    //}
 
 }
 
